@@ -1,0 +1,9 @@
+.container-fluid{
+    height: 10em;
+    position: relative
+}
+
+p.center {
+    width: 100px;
+    text-align: center;
+}
