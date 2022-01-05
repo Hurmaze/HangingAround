@@ -26,7 +26,7 @@ if (isset($data['logIn']))
             $pass = mysqli_fetch_object($pass);
             if (password_verify($ps, $pass->Password)) {
                 $_SESSION['logged_user'] = $lg;
-                echo "<p style='color: green'><strong>Ви авторизувалися!</strong></p>";
+                echo "<p style='color: green'><strong>Ви авторизувалися! </strong></p>";
                 header('Location:main.php');
             } else
                 echo "<p style='color: red'><strong>Логін або пароль введений не правильно</strong></p>";
